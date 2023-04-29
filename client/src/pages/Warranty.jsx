@@ -69,7 +69,7 @@ function Warranty() {
                 onClick={() => {
                   const value = `Product ID: ${data.productId} \n Buyer:${
                     data.buyers[data.buyers.length - 1]
-                  } \n Verify at: https://mumbai.polygonscan.com/address/0x994196d09bbca75c1ba4f99762b1d97f768cb4d1/${
+                  } \n Verify at: https://mumbai.polygonscan.com/address/${
                     data.buyers[data.buyers.length - 1]
                   }`;
                   console.log(value);

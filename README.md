@@ -1,13 +1,5 @@
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
 <!-- Other badges-->
 
-![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 ![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
@@ -26,12 +18,10 @@
     <img src="https://res.cloudinary.com/dgy8ybeoy/image/upload/v1659287496/favicon_rjjovn.ico" alt="Logo" width="80">
   </a>
 
-  <h3 align="center">NFTDocket</h3>
-
   <p align="center">
-    The official repository for the website of NFTDocket
+    Product Authentication System using Blockchain
     <br />
-    <a href="https://project-nft-docket-r728ozcxd-sibasis-malla.vercel.app/">View Live</a>
+    <a href="https://venerable-crumble-abfbd4.netlify.app/">View Live</a>
   </p>
 </p>
 
@@ -62,8 +52,9 @@
 
 ## About The Project
 
-NFTDocket is a Decentralised Warranty Issue platform that can be used by sellers to dispatch their warranties to buyers via a NFT built using Polygon. Free up your cupboard spaces and store your warranties in the digital world in the form of NFTs having proper ownership proof over it. Now the warranty is not a piece of paper but a form of token. Start storing warranties by registering below.  
-We have used the Soulbound NFT concept to provide Warrranties that can not be a victim of theft with the added features of Expiry date and Resell that makes it convenient to be used in many more use-cases.
+Introducing a decentralized platform for warranty issuance that enables sellers to transfer their warranties to buyers through Polygon-based NFTs. You can now keep your warranties in the digital realm as NFTs, freeing up space in your closet, and ensuring proper ownership proof. Instead of a physical piece of paper, warranties are now in token form. To get started, register below and begin storing your warranties.
+
+Our platform utilizes the Soulbound NFT principle, ensuring that warranties cannot be stolen, with added features such as expiry dates and resell options, making them suitable for various other applications.
 
 ## Built With
 
@@ -158,23 +149,23 @@ npm install <package-name> --save-dev
 
 ### Issue Warranty
 
-Sellers can easily issue warranties by setting Order ID, Buyer Wallet Address and Expiry Date as Metadata for the NFT and issue it as a Pending Warranty. This feature does not need the knowledge of coding. We have also used the concept of Soulbound NFTs by making the Keccak256 Hash of the Owner ID and the Product ID and making it a part of the metadata of the NFT. The seller can also track all the pending, active and expiry warranties issued by him.
+Our platform enables sellers to issue warranties effortlessly by including Order ID, Buyer Wallet Address, and Expiry Date as NFT metadata and issuing it as a Pending Warranty. Additionally, we've employed the Soulbound NFT concept by incorporating the Keccak256 Hash of the Owner ID and Product ID into the NFT metadata. The seller can also monitor all pending, active, and expired warranties issued by them.
 
 ### Proof Ownership
 
-When the Warranty is sent to the dashboard of the Buyer as a Pending Warranty the Buyer will need to proof it's ownership by hashing their wallet address which is then hashed using the Keccak256 hash and matched with the hash in the Metadata and on successful verification the Warranty is minted in the chain and added to the active warranties section of the Buyer Dashboard which can be used as a Proof of Ownership and as the Warranty till the Expiry Time.
+When the seller dispatches the warranty to the buyer's dashboard as a Pending Warranty, the buyer must verify their ownership by hashing their wallet address using the Keccak256 hash and comparing it to the hash in the NFT metadata. If the verification is successful, the warranty is minted in the chain and added to the buyer's Active Warranties section on the dashboard, serving as proof of ownership and the warranty until it expires.
 
-### Resell Warranty
+### Resell Warranty (UNDER DEVELOPMENT)
 
-After the Warranty is added to the Active Warranties of the Buyer, the buyer can transfer ownership as well in case of Resell of the Product in which the Current Owner needs to put in the New Owners Wallet Address after which it is issued using the same hashing method as Soul and then the new owner needs to proof ownership in a similiar process as the previous owner.
+Once the warranty is added to the buyer's Active Warranties section, they can transfer ownership in the event of a product resale by inputting the new owner's wallet address. The new owner must then verify their ownership using the same Soulbound hashing method as the previous owner.
 
-### Auto Expiry
+### Auto Expiry (UNDER DEVELOPMENT)
 
-In the case that the current time is greater than the Expiry time of any Product Warranty the Burn Function in the Gelato Ops executes itself which in turn burns the NFT and the Warranty is moved to the Expired Warranty section of the owner. However, the Owner can still use the platform to proof ownership of the product but can not have the benefits of the warranty anymore.
+If the current time exceeds the expiration time of a product warranty, the Burn Function in the Gelato Ops automatically executes, resulting in the NFT being burned and the warranty being moved to the owner's Expired Warranty section. Although the owner can still use the platform to prove product ownership, they are no longer entitled to warranty benefits.
 
 ### Track issued and Expired Warranty
 
-Once a warranty is activated by a owner in their dashboard the warranty also shows the history of all it's previous owner which helps in keeping track of the ownership of the product and sale as well.
+When an owner activates a warranty on their dashboard, the warranty history also displays all of its previous owners, aiding in product ownership and sales tracking.
 
 ## Block Diagram
 
@@ -182,31 +173,45 @@ Once a warranty is activated by a owner in their dashboard the warranty also sho
 
 ## Screenshots
 
-<img src="https://res.cloudinary.com/dgy8ybeoy/image/upload/v1659309065/Screenshot_2022-08-01_044029_jrfsck.png" alt="Logo" width="100%">
-<img src="https://res.cloudinary.com/doybtqm8h/image/upload/v1659309329/Screenshot_2022-08-01_044226_lqbgml.png" alt="Logo" width="100%">
+Home Page:
+<img src="https://res.cloudinary.com/deqgjvwad/image/upload/v1682773271/img1_b5ebuu.png" alt="Logo" width="100%">
+Register as Seller Page:
+<img src="https://res.cloudinary.com/deqgjvwad/image/upload/v1682776057/img6_hj76hf.png" alt="Logo" width="100%">
+Seller Page:
+<img src="https://res.cloudinary.com/deqgjvwad/image/upload/v1682773508/img2_evjmfw.png" alt="Logo" width="100%">
+Sell Product Page:
+<img src="https://res.cloudinary.com/deqgjvwad/image/upload/v1682775872/img5_x9w3zf.png" alt="Logo" width="100%">
+Customer Page:
+<img src="https://res.cloudinary.com/deqgjvwad/image/upload/v1682773827/img3_thgd8a.png" alt="Logo" width="100%">
+Product Page:
+<img src="https://res.cloudinary.com/deqgjvwad/image/upload/v1682773974/img4_hrmu3g.png" alt="Logo" width="100%">
 
 ## Future Scope
 
-- We can implement this in a Mobile Application to further increase the accessibility and use cases multifolds.
-- As, we are using Soulbound NFTs in the application this can also be used to issue certificates that are issued uniquely such as Degrees, Tickets, Citizenship and much more.
-- We can implement a Gamification in this platform in which every issued warranty NFT transfers some credits to the Seller which can later be redeemed on the same platform using different schemes. These credits can also be used as gas fees for issuing NFT Warranties by the sellers which will promote more and more businesses to implement the NFT Warranty system in their systems.
-- We can implement a marketplace to make the process truly one click.
-- We can use the history tracking functionality to keep a track of sale which can be used in products like cars that frequently change hands.
-- As the marketplace is implemented we can also add the functionality of sending the NFT on the buyer’s mobile phone as a notification.
+- Implementing this platform in a mobile application could significantly enhance accessibility and versatility.
+
+- Our use of Soulbound NFTs can enable us to issue uniquely certified items, including degrees, tickets, citizenship, and more.
+
+- Introducing gamification on this platform, wherein every issued warranty NFT transfers credits to the seller, which can be redeemed using various schemes, can promote the widespread adoption of the NFT warranty system. These credits can also be utilized as gas fees for sellers issuing NFT warranties, further encouraging businesses to implement this system.
+
+- The implementation of a marketplace can streamline the process, making it truly one-click.
+
+- Our history tracking feature can be used to keep track of sales, particularly for products like cars that frequently change hands.
+
+- With the marketplace in place, we can also introduce the capability of sending the NFT as a notification to the buyer's mobile phone.
 
 ## Contributors
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/sambit-sankalp"><img src="https://avatars.githubusercontent.com/u/82284130?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sambit Sankalp</b></sub></a><br /><a href="https://github.com/Sibasis-Malla/project-NFTDocket/commits?author=sambit-sankalp" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Sibasis-Malla"><img src="https://avatars.githubusercontent.com/u/72388732?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sibasis-Malla</b></sub></a><br /><a href="https://github.com/Sibasis-Malla/project-NFTDocket/commits?author=Sibasis-Malla" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/rituraj2000"><img src="https://avatars.githubusercontent.com/u/83244005?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rituraj Tripathy</b></sub></a><br /><a href="https://github.com/Sibasis-Malla/project-NFTDocket/commits?author=rituraj2000" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Bismay27"><img src="https://avatars.githubusercontent.com/u/84177372?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bismay Pradhan</b></sub></a><br /><a href="https://github.com/Sibasis-Malla/project-NFTDocket/commits?author=Bismay27" title="Code">💻</a></td>
+    <td align="center"><a><img src="https://res.cloudinary.com/deqgjvwad/image/upload/v1682774420/1666774367708_iqcfgv.jpg" width="100px;" alt=""/><br /><sub><b>Vaibhav Jaiswal <br>20ucc126</b></sub></a><br /><a title="Code">💻</a></td>
+    <td align="center"><a><img src="https://res.cloudinary.com/deqgjvwad/image/upload/v1682774280/1672312762153_gabuj5.jpg" width="100px;" alt=""/><br /><sub><b>Rudraksh Garg <br> 20ucc124</b></sub></a><br /><a title="Code">💻</a></td>
+    <td align="center"><a><img src="https://res.cloudinary.com/deqgjvwad/image/upload/v1682774386/1670846879672_nmoveo.jpg" width="100px;" alt=""/><br /><sub><b>Samarth Dengre <br> 20ucc092</b></sub></a><br /><a title="Code">💻</a></td>
   </tr>
 </table>
 
